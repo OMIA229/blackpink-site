@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>BLACKPINK SONGS</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* صندوق البحث */
+    .search {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    #searchBox {
+      padding: 10px;
+      width: 60%;
+      border: 2px solid pink;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    /* كروت الأغاني */
+    .songs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .song-card {
+      width: 200px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      background: rgba(255, 192, 203, 0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .song-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .download-btn {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: pink;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      background: hotpink;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BLACKPINK WORLD</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن الفرقة</a></li>
+        <li><a href="members.html">الأعضاء</a></li>
+        <li><a href="gallery.html">المعرض</a></li>
+        <li><a href="songs.html">الأغاني</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop playsinline id="MyVideo">
+      <source src="video/Ox.mp4" type="video/mp4">
+    </video>
+    <h1>🎵 مكتبة أغاني BLACKPINK 🎵</h1>
+    <p>استمع إلى أجمل الأغاني الكورية مع بلاك بينك</p>
+  </section>
+
+  <!-- صندوق البحث -->
+  <section class="search">
+    <input type="text" id="searchBox" placeholder="ابحث عن أغنية...">
+  </section>
+
+  <!-- قسم الأغاني -->
+  <section class="songs">
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>DDU-DU DDU-DU</h3>
+      <audio controls>
+        <source src="songs/S.MP3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/S.mp3'">تحميل</button>
+    </div>
+
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/Kill.mp3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>KILL THIS LOVE</h3>
+      <audio controls>
+        <source src="songs/S.MP3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Kill.mp3'">تحميل</button>
+    </div>
+
+    <div class="song-card">
+      <img src="img/1.jpg" alt="غلاف الأغنية">
+      <h3>HOW YOU LIKE THAT</h3>
+      <audio controls>
+        <source src="songs/S.MP3" type="audio/mp3">
+      </audio>
+      <button class="download-btn" onclick="window.location.href='songs/Like.mp3'">تحميل</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>ASSJAD MUTAWAKKIL | جميع الحقوق محفوظة</p>
+  </footer>
+
+  <!-- سكربت البحث -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchBox = document.getElementById("searchBox");
+      const cards = document.querySelectorAll(".song-card");
+
+      searchBox.addEventListener("input", function () {
+        const query = this.value.trim().toLowerCase();
+
+        cards.forEach(card => {
+          const title = card.querySelector("h3").textContent.toLowerCase();
+          if (title.includes(query)) {
+            card.style.display = "block"; // يظهر الكارد
+          } else {
+            card.style.display = "none";  // يخفي الكارد
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

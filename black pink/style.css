@@ -1,0 +1,443 @@
+/* إعدادات عامة */
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  line-height: 1;
+}
+
+/* رأس الموقع */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff69b4;
+  padding: 15px 30px;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* الصفحة الرئيسية (البانر الرئيسي) */
+.hero {
+  text-align: center;
+  padding: 250px 20px;
+  background: url('img/b.jpg') no-repeat center center/cover;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #ff69b4;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* عن الفرقة */
+.about {
+  padding: 50px;
+  text-align: center;
+}
+
+/* الأعضاء */
+.members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 50px;
+}
+
+.member-card {
+  background-color: #111;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.member-card:hover {
+  transform: scale(1.05);
+}
+
+.member-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* صفحة العضوة الفردية */
+.member-profile {
+  padding: 40px;
+  text-align: center;
+}
+
+.member-profile h2 {
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+/* معرض صور العضوة */
+.member-gallery {
+  padding: 30px;
+  text-align: center;
+}
+
+.member-gallery h3 {
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ff69b4;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+.gallery video{
+  display: block;
+  margin: 20px auto 30px;
+  max-width: 600px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* صفحة التواصل */
+.contact {
+  padding: 100px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #ff69b4;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #df10a1;
+  color: #ffffff;
+}
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(330, 98%, 51%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(255, 0, 212) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(337, 100%, 49%);
+  color: hsl(325, 85%, 46%);
+  box-shadow: rgb(220, 24, 145) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+.download-btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: pink;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #ff69b4; /* وردي أغمق عند المرور */
+  color: white;
+}
+
+
+/* ذيل الموقع */
+footer {
+  background-color: rgba(17, 17, 17, 0.8); /* أسود مع شفافية 80% */
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 2px solid pink; /* خط علوي وردي */
+  color: #fff; /* لون النص أبيض ليظهر بوضوح */
+}
+
+
+#MyVideo{
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero{
+  background: transparent !important;
+}
+.songs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+.song-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+}
+.song-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.search {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#searchBox {
+  padding: 10px;
+  width: 60%;
+  border: 2px solid pink;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* إخفاء عبر كلاس موحّد */
+.hidden {
+  display: none !important;
+}
+
+
+
+/* From Uiverse.io by MijailVillegas */ 
+.card {
+  background: center;
+
+  max-width: fit-content;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+  backdrop-filter: blur(15px);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.192),
+    inset 0 0 5px rgba(255, 255, 255, 0.274), 0 5px 5px rgba(0, 0, 0, 0.164);
+  transition: 0.5s;
+}
+
+.card:hover {
+  animation: ease-out 5s;
+  background: rgba(173, 173, 173, 0.05);
+}
+
+.card ul {
+  padding: 1rem;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;       /* يوسّط العناصر عموديًا */
+  justify-content: center;   /* يوسّط العناصر أفقيًا */
+  flex-wrap: wrap;           /* يخليهم ينزلوا لسطر جديد لو الشاشة صغيرة */
+  flex-direction: column-reverse;       /* يخليهم في صف واحد */
+}
+
+
+.card ul li {
+  cursor: pointer;
+}
+
+.svg {
+  transition: all 0.3s;
+  align-items: center;       /* يوسّط العناصر عموديًا */
+  justify-content: center;
+  /* if you find some problems change w - h : 30px*/
+  padding: 1rem;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  color: rgb(239, 0, 171);
+  fill: currentColor;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.text {
+  opacity: 0;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.3s;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  z-index: 9999;
+  box-shadow: -5px 0 1px rgba(153, 153, 153, 0.2),
+    -10px 0 1px rgba(153, 153, 153, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
+}
+
+/*isometric prooyection*/
+.iso-pro {
+  transition: 0.5s;
+}
+.iso-pro:hover a > .svg {
+  transform: translate(15px, -15px);
+  border-radius: 100%;
+}
+
+.iso-pro:hover .text {
+  opacity: 1;
+  transform: translate(25px, -2px) skew(-5deg);
+}
+
+.iso-pro:hover .svg {
+  transform: translate(5px, -5px);
+}
+
+.iso-pro span {
+  opacity: 0;
+  position: absolute;
+  color: #1877f2;
+  border-color: #1877f2;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+  border-radius: 50%;
+  transition: all 0.3s;
+  height: 60px;
+  width: 60px;
+}
+
+.iso-pro:hover span {
+  opacity: 1;
+}
+
+.iso-pro:hover span:nth-child(1) {
+  opacity: 0.2;
+}
+
+.iso-pro:hover span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+
+.iso-pro:hover span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+.omia {
+  background: center;
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+   color: #fe03c3;
+   opacity: 60%; 
+}
+
+
+button {
+  background-color: #ff4da6; /* وردي */
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff85c1; /* وردي فاتح عند المرور */
+  transform: scale(1.05);
+}
+.thankyou {
+  margin-top: 15%;
+  text-align: center;
+  color: #fff;
+}
+
+.thankyou h2 {
+  font-size: 2em;
+  color: #ff4da6; /* وردي BLACKPINK */
+  margin-bottom: 10px;
+}
+
+.thankyou p {
+  font-size: 1.2em;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.thankyou button {
+  background-color: #ff4da6;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.thankyou button:hover {
+  background-color: #ff85c1;
+  transform: scale(1.05);
+}
